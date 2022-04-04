@@ -1,25 +1,16 @@
 import React from "react";
+import useReview from "../../hooks/useReview";
+import ReviewAll from "../ReviewAll/ReviewAll";
 
 const Review = () => {
-  return (
-    <div>
-      <div className="border-2">
-        <h1>pd name: </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          maxime.
-        </p>
-        <p>ratting .............</p>
+  const [reviews, setReviews] = useReview([]);
+  console.log(typeof reviews);
 
-        <div>
-          <div>
-            <img src="" alt="loading" />
-          </div>
-          <div>
-            <h1>name</h1>
-          </div>
-        </div>
-      </div>
+  return (
+    <div className=" grid grid-cols-3 gap-4">
+      {reviews.map((review) => (
+        <ReviewAll key={review.id} review={review} />
+      ))}
     </div>
   );
 };

@@ -5,7 +5,7 @@ const DashBoard = () => {
   return (
     <div>
       <h1 className="text-center text-4xl text-orange-700 mt-3">
-        Here Shown up Our Employees Salary
+        Here Shown up Our Employees Salary!!
       </h1>
       <Charts></Charts>
     </div>

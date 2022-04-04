@@ -1,10 +1,22 @@
-import { useNavigate } from "react-router-dom";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link, useNavigate } from "react-router-dom";
+import useReview from "../../hooks/useReview";
 import laptop from "../../Images/laptop.jpg";
+import Review from "../Review/Review";
 import "./Home.css";
 
 const Home = () => {
+  // const [reviews] = useReview([]);
+  // Explore more
   const navigate = useNavigate();
   const exploreMore = () => {
+    navigate("/review");
+  };
+
+  // Show Review
+  // const show = usuNavigate()
+  const ShowReview = () => {
     navigate("/review");
   };
   return (
@@ -31,13 +43,32 @@ const Home = () => {
         </div>
 
         <div>
-          <img className="rounded-lg  " src={laptop} alt=" loading" />
+          <img
+            className="rounded-lg h-[400px] w-[400px] mt-20 "
+            src={laptop}
+            alt=" loading"
+          />
         </div>
       </div>
 
+      {/*========== Review section ============== */}
+
       <div className="review-container">
         <h1 className=" text-3xl text-center underline">Customer Review</h1>
-        <button className="border-2">See More</button>
+        <div className="review-items">
+          <Review></Review>
+        </div>
+        <div className="flex justify-center my-4 ">
+          <button
+            onClick={ShowReview}
+            className="hover:bg-orange-800 border-2 px-10 rounded-lg gap-2 py-2 bg-orange-600 text-white text-xl flex justify-center items-center"
+          >
+            All Review
+            <div>
+              <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -3,8 +3,6 @@ import {
   CartesianGrid,
   Line,
   LineChart,
-  Pie,
-  PieChart,
   Tooltip,
   XAxis,
   YAxis,
