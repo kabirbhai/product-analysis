@@ -7,6 +7,7 @@ import Home from "./components/Home/Home";
 import Review from "./components/Review/Review";
 import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
+import DashBoard from "./components/DashBoard/DashBoard";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/review" element={<Review />} />
+        <Route path="/dashboard" element={<DashBoard />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
