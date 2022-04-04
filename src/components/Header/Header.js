@@ -45,7 +45,6 @@ const Header = () => {
           </Link>
         </div>
       </nav>
-      <hr />
     </div>
   );
 };
