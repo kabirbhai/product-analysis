@@ -10,33 +10,48 @@ const Header = () => {
           <Link to="/"> Best-Laptop</Link>
         </div>
         <div className="nav-item">
-          <Link className="px-1 text-base  hover:text-blue-700" to="/home">
-            Home
-          </Link>
-          <Link className="px-1 text-base   hover:text-blue-700" to="/review">
-            Review
+          <Link
+            className="mr-4 underline text-base   hover:text-orange-500"
+            to="/home"
+          >
+            HOME
           </Link>
           <Link
-            className="px-1 text-base   hover:text-blue-700"
+            className="mr-4 underline text-base    hover:text-orange-500"
+            to="/review"
+          >
+            REVIEW
+          </Link>
+          <Link
+            className="mr-4 underline text-base    hover:text-orange-500"
             to="/dashboard"
           >
-            Dashboard
+            DASHBOARD
           </Link>
-          <Link className="px-1 text-base   hover:text-blue-700" to="/blog">
-            blog
+          <Link
+            className="mr-4 underline text-base    hover:text-orange-500"
+            to="/blog"
+          >
+            BLOG
           </Link>
-          <Link className="px-1 text-base   hover:text-blue-700" to="/about">
-            About
-          </Link>
-          <Link className="px-1 text-base   hover:text-blue-700" to="/contact">
-            Contact
+          <Link
+            className="mr-4 underline text-base    hover:text-orange-500"
+            to="/about"
+          >
+            ABOUT
           </Link>
         </div>
         <div className="nav-submit">
-          <Link className="px-1 text-xl hover:text-blue-700" to="/login">
+          <Link
+            className="p-3 text-base bg-orange-600 rounded-lg m-1  hover:bg-orange-900"
+            to="/login"
+          >
             Login
           </Link>
-          <Link className="px-1 text-xl hover:text-blue-700" to="/signup">
+          <Link
+            className="p-3 text-base bg-orange-600 rounded-lg m-1 hover:bg-orange-900"
+            to="/signup"
+          >
             SignUp
           </Link>
         </div>
