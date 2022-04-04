@@ -7,6 +7,8 @@ import Home from "./components/Home/Home";
 import Review from "./components/Review/Review";
 import Blog from "./components/Blog/Blog";
 import DashBoard from "./components/DashBoard/DashBoard";
+import Login from "./components/Login/Login";
+import Signup from "./components/Signup/Signup";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/dashboard" element={<DashBoard />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

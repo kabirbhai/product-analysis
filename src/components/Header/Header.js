@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CustomLink from "../CustomLink/CustomLink";
 import "./Header.css";
 
 const Header = () => {
@@ -9,38 +10,26 @@ const Header = () => {
         <div className="text-3xl text-orange-500">
           <Link to="/"> Best-Laptop</Link>
         </div>
-        <div className="nav-item">
-          <Link
-            className="mr-4 underline text-base   hover:text-orange-500"
-            to="/home"
-          >
+        <div className="nav-item flex">
+          <CustomLink className="mr-4   text-bas " to="/home">
             HOME
-          </Link>
-          <Link
-            className="mr-4 underline text-base    hover:text-orange-500"
-            to="/review"
-          >
+          </CustomLink>
+          <CustomLink className="mr-4   text-base " to="/review">
             REVIEW
-          </Link>
-          <Link
-            className="mr-4 underline text-base    hover:text-orange-500"
-            to="/dashboard"
-          >
+          </CustomLink>
+          <CustomLink className="mr-4   text-base " to="/dashboard">
             DASHBOARD
-          </Link>
-          <Link
-            className="mr-4 underline text-base    hover:text-orange-500"
-            to="/blog"
-          >
+          </CustomLink>
+          <CustomLink className="mr-4   text-base " to="/blog">
             BLOG
-          </Link>
-          <Link
-            className="mr-4 underline text-base    hover:text-orange-500"
-            to="/about"
-          >
+          </CustomLink>
+          <CustomLink className="mr-4   text-base " to="/about">
             ABOUT
-          </Link>
+          </CustomLink>
         </div>
+
+        {/*============== login and submit div========================  */}
+
         <div className="nav-submit">
           <Link
             className="p-3 text-base bg-orange-600 rounded-lg m-1  hover:bg-orange-900"
