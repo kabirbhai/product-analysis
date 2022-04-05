@@ -6,11 +6,11 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <nav className=" flex py-6 justify-between items-center bg-slate-900 text-white ">
-        <div className="text-3xl text-orange-500">
+      <nav>
+        <div className="logo text-3xl  text-orange-500 ">
           <Link to="/"> Best-Laptop</Link>
         </div>
-        <div className="nav-item flex">
+        <div className="nav-item flex ">
           <CustomLink className="mr-4   text-bas " to="/home">
             HOME
           </CustomLink>
@@ -30,7 +30,7 @@ const Header = () => {
 
         {/*============== login and submit div========================  */}
 
-        <div className="nav-submit">
+        <div className="nav-item nav-submit flex">
           <Link
             className="p-3 text-base bg-orange-600 rounded-lg m-1  hover:bg-orange-900"
             to="/login"
