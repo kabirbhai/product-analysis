@@ -4,7 +4,6 @@ import ReviewAll from "../ReviewAll/ReviewAll";
 
 const Review = () => {
   const [reviews, setReviews] = useReview([]);
-  console.log(typeof reviews);
 
   return (
     <div className=" grid grid-cols-1 md:grid-cols-3 gap-4">

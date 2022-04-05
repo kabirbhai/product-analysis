@@ -4,8 +4,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {
+  const navigate = useNavigate();
+  const backToHome = () => {
+    navigate("/home");
+  };
   return (
     <section className="px-4 py-32 mx-auto max-w-7xl">
       <div className="grid items-center w-full grid-cols-1 gap-10 mx-auto md:w-4/5 lg:grid-cols-2 xl:gap-32">
@@ -19,7 +24,10 @@ const NotFound = () => {
           <p className="mb-5 text-base text-left text-gray-800 md:text-xl">
             You might have the wrong address, or the page may have moved.
           </p>
-          <button className="w-full mb-2 py-2 px-3 text-white mt-3 rounded-lg bg-orange-600 sm:w-auto sm:mb-0">
+          <button
+            onClick={backToHome}
+            className="w-full mb-2 py-2 px-3 text-white mt-3 rounded-lg bg-orange-600 sm:w-auto sm:mb-0"
+          >
             <FontAwesomeIcon icon={faArrowLeftLong}></FontAwesomeIcon> Back to
             homepage
           </button>

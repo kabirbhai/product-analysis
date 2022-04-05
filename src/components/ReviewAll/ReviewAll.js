@@ -1,4 +1,7 @@
-import React from "react";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useEffect, useState } from "react";
+import Rating from "react-rating";
 
 const ReviewAll = (props) => {
   const { name, description, rating } = props.review;
@@ -6,9 +9,19 @@ const ReviewAll = (props) => {
     <div>
       <div className="rounded-lg border-2 p-4">
         <div>
-          <h1 className="text-xl font-bold">{name} </h1>
           <p>{description}</p>
-          <p>Rating:{rating}</p>
+
+          <div className="flex justify-between items-center">
+            <h1 className="text-xl font-bold">{name} </h1>
+            <Rating
+              initialRating={rating}
+              emptySymbol={<FontAwesomeIcon icon={faStar} />}
+              fullSymbol={
+                <FontAwesomeIcon style={{ color: "goldenrod" }} icon={faStar} />
+              }
+              readonly
+            ></Rating>
+          </div>
         </div>
       </div>
     </div>
