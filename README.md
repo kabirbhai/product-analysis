@@ -1,11 +1,10 @@
 # Product Review website
 
-This project was Tailwind with [Create React App].
 In this website you Know show Laptop review
 
 # Live site link
 
-(https://facebook.github.io/create-react-app/docs/running-tests)
+(https://product-reviews-app.netlify.app/)
 
 ### What you will Know this website
 

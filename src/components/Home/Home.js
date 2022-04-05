@@ -65,7 +65,7 @@ const Home = () => {
       {/*========== Review section ============== */}
 
       <div className="review-container">
-        <h1 className=" text-3xl text-center underline">Customer Review</h1>
+        <h1 className=" text-3xl text-center underline">Customer Reviews</h1>
         <div className="review-items">
           <Review></Review>
         </div>
