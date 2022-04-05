@@ -10,8 +10,11 @@ const Home = () => {
   // const [reviews] = useReview([]);
   // Explore more
   const navigate = useNavigate();
-  const exploreMore = () => {
-    navigate("/review");
+  const aboutUs = () => {
+    navigate("/about");
+  };
+  const exploreBlog = () => {
+    navigate("/blog");
   };
 
   // Show Review
@@ -21,8 +24,8 @@ const Home = () => {
   };
   return (
     <div className="home-container">
-      <div className="flex justify-between h-[100vh]">
-        <div className="pl-6 pt-16">
+      <div className="home-page flex justify-between h-[100vh]">
+        <div className="sm:pl-6 sm:pt-16 p-4">
           <h1 className="text-6xl text-orange-400">Best Laptop Review</h1>
           <h1 className="text-4xl text-orange-400">
             Choose One
@@ -35,10 +38,16 @@ const Home = () => {
             delectus iste praesentium provident aspernatur et?
           </p>
           <button
-            onClick={exploreMore}
-            className=" border-2 text-xl  px-6 py-4 rounded-lg mt-3 text-white bg-orange-600 hover:bg-orange-900 "
+            onClick={aboutUs}
+            className=" border-2 text-xl px-6 py-4 rounded-lg mt-3 text-white bg-orange-600 hover:bg-orange-900 "
           >
-            Explore more
+            About us
+          </button>
+          <button
+            onClick={exploreBlog}
+            className=" border-2 text-xl px-6 py-4 rounded-lg mt-3 text-white bg-orange-600 hover:bg-orange-900 "
+          >
+            Explore Blogs
           </button>
         </div>
 

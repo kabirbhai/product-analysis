@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 nav{
     font-family: 'Comfortaa', cursive;
-    position: relative;
     display:flex;
     padding: 1.5rem; 
     justify-content: space-between; 
@@ -26,9 +25,21 @@ nav{
     .nav-submit{
       display: none;
     }
+    .home-page{
+      padding: 0;
+    }
+    .home-page img{
+      display: none;
+    }
+    .chart-container{
+      flex-direction: column-reverse;
+    }
 }
 
 /* for ipad  */
 @media only screen and (max-width: 768px) {
   .logo{display: none;}
+  .home-page img{
+    display: none;
+  }
 }

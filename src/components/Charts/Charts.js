@@ -12,7 +12,7 @@ import useData from "../../hooks/useData";
 const Charts = () => {
   const [data] = useData([]);
   return (
-    <div className="flex justify-between mt-20">
+    <div className="chart-container flex justify-between sm:flex-col-reverse mt-6">
       <LineChart width={400} height={300} data={data}>
         <Line dataKey="investment" stroke="#8884d8" />
         <Line
@@ -30,20 +30,22 @@ const Charts = () => {
         <YAxis />
       </LineChart>
 
-      <LineChart width={600} height={300} data={data}>
-        <Line type="monotone" dataKey="investment" stroke="#8884d8" />
-        <Line
-          type="monotone"
-          dataKey="revenue"
-          stroke="#d68b00
+      <div>
+        <LineChart width={400} height={300} data={data}>
+          <Line type="monotone" dataKey="investment" stroke="#8884d8" />
+          <Line
+            type="monotone"
+            dataKey="revenue"
+            stroke="#d68b00
 "
-        />
-        <Line type="monotone" dataKey="sell" stroke="#ad00ad" />
-        <CartesianGrid stroke="#ccc" />
-        <XAxis dataKey="month" />
-        <Tooltip />
-        <YAxis />
-      </LineChart>
+          />
+          <Line type="monotone" dataKey="sell" stroke="#ad00ad" />
+          <CartesianGrid stroke="#ccc" />
+          <XAxis dataKey="month" />
+          <Tooltip />
+          <YAxis />
+        </LineChart>
+      </div>
     </div>
   );
 };
