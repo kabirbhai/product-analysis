@@ -12,7 +12,7 @@ import useData from "../../hooks/useData";
 const Charts = () => {
   const [data] = useData([]);
   return (
-    <div className="chart-container flex justify-between sm:flex-col-reverse mt-6">
+    <div className="chart-container flex justify-between  mt-6">
       <LineChart width={400} height={300} data={data}>
         <Line dataKey="investment" stroke="#8884d8" />
         <Line

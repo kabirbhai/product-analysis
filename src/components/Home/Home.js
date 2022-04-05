@@ -32,10 +32,12 @@ const Home = () => {
             <span className="text-5xl text-yellow-800"> -IN 2022</span>
           </h1>
           <p className="mt-4 text-black">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit,
-            eveniet nam. Suscipit consectetur <br /> sint earum in incidunt
-            dolores repellat porro, excepturi, rem <br /> alias consequatur
-            delectus iste praesentium provident aspernatur et?
+            Hello guys!!! <br />
+            In this website you will know all information about Laptop. Which
+            type of laptop you should buy? <br /> After showing out review you
+            can choose your best laptop. Hope this website help to you everyone{" "}
+            <br />
+            Thanks!!
           </p>
           <button
             onClick={aboutUs}
