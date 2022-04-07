@@ -31,7 +31,7 @@ const Home = () => {
             Choose One
             <span className="text-5xl text-yellow-800"> -IN 2022</span>
           </h1>
-          <p className="mt-4 text-black">
+          <p className="mt-4 text-white">
             Hello guys!!! <br />
             In this website you will know all information about Laptop. Which
             type of laptop you should buy? <br /> After showing out review you
@@ -47,7 +47,7 @@ const Home = () => {
           </button>
           <button
             onClick={exploreBlog}
-            className=" border-2 text-xl px-6 py-4 rounded-lg mt-3 text-white bg-orange-600 hover:bg-orange-900 "
+            className=" mx-4 border-2 text-xl px-6 py-4 rounded-lg mt-3 text-white bg-orange-600 hover:bg-orange-900 "
           >
             Explore Blogs
           </button>
